@@ -1,8 +1,8 @@
 import {Stack} from "expo-router";
 import { useFonts } from "expo-font";
-import * as SplashScreen from "expo-splash-screen";
+//import * as SplashScreen from "expo-splash-screen";
 
-SplashScreen.preventAutoHideAsync();
+//SplashScreen.preventAutoHideAsync();
 
 export const unstable_settings = {
     //Ensure any route can link back to `/`
@@ -11,9 +11,9 @@ export const unstable_settings = {
 
 const Layout = () => {
     const [fontsLoaded] = useFonts({
-        DMBold: require("../assets/fonts/DMSans-Bold.ttf"),
-        DMMedium: require("../assets/fonts/DMSans-Medium.ttf"),
-        DMRegular: require("../fonts/DmSans-Regular.ttf"),
+        DMBold: require('../assets/fonts/DMSans-Bold.ttf'),
+        DMMedium: require('../assets/fonts/DMSans-Medium.ttf'),
+        DMRegular: require('../assets/fonts/DMSans-Regular.ttf'),
     });
  if(!fontsLoaded){
     return null;
