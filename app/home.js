@@ -3,7 +3,7 @@ import {SafeAreaView, ScrollView, View} from "react-native";
 
 import{COLORS, icons, images, SIZES} from "../constants";
 
-import {Nearbyjobs,ScreenHeaderBtn/*, Popularjobs,Welcome*/} from "../components";
+import {Nearbyjobs,ScreenHeaderBtn, PopularJobs,Welcome} from "../components";
 import { Stack,useRouter } from "expo-router";
 
 const Home = () =>{
@@ -26,7 +26,7 @@ const Home = () =>{
 
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View  style={{flex:1, padding: SIZES.medium,}} >
-                    {/*<Welcome
+                    <Welcome
                     searchTerm ={searchTerm} 
                     setSearchTerm={setSearchTerm}
                     handleClick={()=>{
@@ -35,8 +35,8 @@ const Home = () =>{
                         }
                     }}
                     
-                />*/}
-                   {/*<Popularjobs/>*/} 
+                />
+                   <PopularJobs />
                     <Nearbyjobs />
                 </View>
             </ScrollView>
